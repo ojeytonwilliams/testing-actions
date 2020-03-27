@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ojeytonwilliams/testing-actions/issues"
   },
-  "homepage": "https://github.com/ojeytonwilliams/testing-actions#readme"
+  "homepage": "https://github.com/ojeytonwilliams/testing-actions#readme",
+  "devDependencies": {
+    "jest": "^25.2.3"
+  }
 }
