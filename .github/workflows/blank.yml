@@ -32,6 +32,10 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
 
+    # Installs node modules
+    - name: Install node modules
+      run: npm ci
+
     # Runs a single command using the runners shell
     - name: Run tests
       run: npm test
