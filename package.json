@@ -1,0 +1,19 @@
+{
+  "name": "testing-actions",
+  "version": "0.0.1",
+  "description": "testing actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ojeytonwilliams/testing-actions.git"
+  },
+  "author": "Oliver Eyton-Williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ojeytonwilliams/testing-actions/issues"
+  },
+  "homepage": "https://github.com/ojeytonwilliams/testing-actions#readme"
+}
