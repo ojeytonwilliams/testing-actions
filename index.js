@@ -1,3 +1,3 @@
 exports.sum = function(x, y) {
-  return x + x;
+  return x + y;
 }
