@@ -1,7 +1,5 @@
 name: VerifyLabels
-on:
-  pull_request:
-    types: [opened, reopened, labeled, unlabeled]
+on: [pull_request]
 
 jobs:
   label_checker:
