@@ -1,0 +1,15 @@
+name: Verify if any failure labels appear on PR
+on:
+  pull_request:
+    types: [opened, reopened, labeled, unlabeled]
+
+jobs:
+  labelChecker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Check for failure labels
+      uses: RandellDawson/fail-with-these-labels-action@master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        labels-to-fail: "status: blocked,status: i18n review required"
