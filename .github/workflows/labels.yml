@@ -6,6 +6,7 @@ on:
 jobs:
   label_checker:
     runs-on: ubuntu-latest
+    name: A job to check labels
     steps:
     - name: Check for failure labels
       uses: ojeytonwilliams/fail-with-these-labels-action@master
