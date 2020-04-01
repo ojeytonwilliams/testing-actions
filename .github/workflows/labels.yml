@@ -9,7 +9,7 @@ jobs:
     name: A job to check labels
     steps:
     - name: Check for failure labels
-      uses: ojeytonwilliams/fail-with-these-labels-action@v2
+      uses: ojeytonwilliams/fail-with-these-labels-action@master
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         labels-to-fail: "status: blocked,status: i18n review required"
