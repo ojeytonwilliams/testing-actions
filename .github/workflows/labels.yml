@@ -1,5 +1,7 @@
 name: VerifyLabels
-on: [pull_request]
+on:
+  pull_request:
+    types: [labeled]
 
 jobs:
   label_checker:
@@ -7,7 +9,7 @@ jobs:
     name: A job to check labels
     steps:
     - name: Check for failure labels
-      uses: ojeytonwilliams/fail-with-these-labels-action@master
+      uses: ojeytonwilliams/fail-with-these-labels-action@v2
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         labels-to-fail: "status: blocked,status: i18n review required"
