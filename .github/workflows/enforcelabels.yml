@@ -9,4 +9,4 @@ jobs:
       - name: Enforce PR label
         uses: yogevbd/enforce-label-action@1.0.1
         with:
-          valid-labels: "bug,feature"
+          valid_labels: "bug,feature"
