@@ -8,6 +8,7 @@ jobs:
     steps:
       - name: Enforce PR label
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALID_LABELS: "bug,duplicate"
           TEST_ENV: whateverenv
         uses: yogevbd/enforce-label-action@1.0.1
