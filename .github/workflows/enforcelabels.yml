@@ -7,6 +7,8 @@ jobs:
     name: A job to enforce labels
     steps:
       - name: Enforce PR label
+        env:
+          VALID_LABELS: "bug,duplicate"
         uses: yogevbd/enforce-label-action@1.0.1
         with:
           valid_labels: "bug,feature"
