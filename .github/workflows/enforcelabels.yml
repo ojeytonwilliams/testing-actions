@@ -1,5 +1,6 @@
 name: Enforce Labels
-on: [pull_request]
+on: pull_request
+  types: [labeled, unlabeled]
 
 jobs:
   enforce_labels:
