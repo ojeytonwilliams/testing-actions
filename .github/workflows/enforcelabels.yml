@@ -11,7 +11,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALID_LABELS: "bug,duplicate"
           TEST_ENV: whateverenv
-        uses: yogevbd/enforce-label-action@1.0.1
+        uses: ojeytonwilliams/enforce-label-action@master
         with:
           VALID_LABELS: "bug,feature"
           test_input: whateverinput
