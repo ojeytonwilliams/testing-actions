@@ -9,6 +9,8 @@ jobs:
       - name: Enforce PR label
         env:
           VALID_LABELS: "bug,duplicate"
+          TEST_ENV: whateverenv
         uses: yogevbd/enforce-label-action@1.0.1
         with:
           valid_labels: "bug,feature"
+          test_input: whateverinput
