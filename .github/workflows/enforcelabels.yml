@@ -1,0 +1,6 @@
+name: Enforce Labels
+on: [pull_request]
+
+jobs:
+  - name: Enforce PR label
+  uses: yogevbd/enforce-label-action@1.0.1
